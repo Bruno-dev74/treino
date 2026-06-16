@@ -158,7 +158,7 @@ function openVideo(name){
  const id=videoId(v.url);
  if(!id){window.open(v.url,"_blank");return}
  document.getElementById("modalTitle").textContent=name;
- document.getElementById("player").src="https://www.youtube.com/embed/"+id+"?autoplay=1&rel=0";
+ document.getElementById("player").src="https://www.youtube.com/embed/"+id+"?autoplay=1&mute=1&rel=0";
  document.getElementById("modal").classList.add("open");
 }
 function closeVideo(){document.getElementById("modal").classList.remove("open");document.getElementById("player").src=""}
